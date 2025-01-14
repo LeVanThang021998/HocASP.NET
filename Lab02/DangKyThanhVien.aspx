@@ -1,169 +1,135 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DangKyThanhVien.aspx.cs" Inherits="DangKyThanhVien" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DangKyThanhVien.aspx.cs" Inherits="Lab01.DangKyThanhVien" %>
 
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Hồ Sơ Đăng Ký</title>
-    <style>
-        /* Tổng quan trang */
-        body {
-            /*font-family: Arial, sans-serif;*/
-            background-color: #f3f4f6;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .title {
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        /* Hàng và cột */
-        .form-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .form-column {
-            flex: 1;
-            min-width: 45%;
-            background: #f7f9fc;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        /* Các phần tiêu đề */
-        .form-column h3 {
-            font-size: 18px;
-            color: #444;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
-        }
-
-        /* Cách căn chỉnh bảng */
-        table {
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
             width: 100%;
         }
-        table td {
-            padding: 10px 5px;
+        .auto-style3 {}
+        .auto-style4 {
+            width: 174px;
         }
-        table td:first-child {
-            text-align: right;
-            font-weight: bold;
-            color: #555;
-            width: 35%;
+        .auto-style5 {
+            width: 285px;
         }
-        table input[type="text"],
-        table input[type="password"],
-        table input[type="email"] {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
+        .auto-style6 {
+            width: 174px;
+            height: 31px;
         }
-
-        /* Nút đăng ký */
-        .btn {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .btn input {
-            padding: 10px 20px;
-            background: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .btn input:hover {
-            background: #0056b3;
-        }
-
-        /* Thông báo lỗi */
-        .error-list {
-            color: red;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-        .success {
-            color: green;
-            font-size: 16px;
+        .auto-style7 {
+            width: 285px;
+            height: 31px;
         }
     </style>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container">
-            <div class="title">Hồ Sơ Đăng Ký</div>
-            <div class="form-section">
-                <!-- Cột trái: Thông tin đăng nhập -->
-                <div class="form-column">
-                    <h3>Thông Tin Đăng Nhập</h3>
-                    <table>
-                        <tr>
-                            <td>Tên đăng nhập:</td>
-                            <td><asp:TextBox ID="txtTenDangNhap" runat="server" placeholder="Nhập tên đăng nhập"></asp:TextBox></td>
-                        </tr>
-                        <tr>
-                            <td>Mật khẩu:</td>
-                            <td><asp:TextBox ID="txtMatKhau" runat="server" TextMode="Password" placeholder="Nhập mật khẩu"></asp:TextBox></td>
-                        </tr>
-                        <tr>
-                            <td>Nhập lại mật khẩu:</td>
-                            <td><asp:TextBox ID="txtNhapLaiMatKhau" runat="server" TextMode="Password" placeholder="Nhập lại mật khẩu"></asp:TextBox></td>
-                        </tr>
-                    </table>
-                    <h3>Thông Tin Cá Nhân</h3>
-                    <table>
-                        <tr>
-                            <td>Họ tên:</td>
-                            <td><asp:TextBox ID="txtHoTen" runat="server" placeholder="Nhập họ tên"></asp:TextBox></td>
-                        </tr>
-                        <tr>
-                            <td>Ngày sinh:</td>
-                            <td><asp:TextBox ID="txtNgaySinh" runat="server" placeholder="dd/mm/yyyy"></asp:TextBox></td>
-                        </tr>
-                        <tr>
-                            <td>Email:</td>
-                            <td><asp:TextBox ID="txtEmail" runat="server" placeholder="Nhập email"></asp:TextBox></td>
-                        </tr>
-                        <tr>
-                            <td>Địa chỉ:</td>
-                            <td><asp:TextBox ID="txtDiaChi" runat="server" placeholder="Nhập địa chỉ"></asp:TextBox></td>
-                        </tr>
-                        <tr>
-                            <td>Điện thoại:</td>
-                            <td><asp:TextBox ID="txtDienThoai" runat="server" placeholder="Nhập số điện thoại"></asp:TextBox></td>
-                        </tr>
-                    </table>
-                </div>
+        <div class="container w-50">
+        
+        <table cellpadding="5" cellspacing="0" class="auto-style1">
+            <tr>
+                <td class="bg-info h3 text-center text-primary" colspan="3">Hồ sơ đăng ký</td>
+            </tr>
+            <tr>
+              <td class="text-center" colspan="2" style="color: purple; background-color: pink;">Thông tin đăng nhập</td>
+<td class="text-center" style="color: purple; background-color: pink;">Hồ sơ khách hàng</td>
 
-                <!-- Cột phải: Danh sách lỗi -->
-                <div class="form-column">
-                    <h3>Danh Sách Lỗi</h3>
-                    <asp:Label ID="lblDanhSachLoi" runat="server" CssClass="error-list"></asp:Label>
-                </div>
-            </div>
+            </tr>
+            <tr>
+                <td class="auto-style6">Tên đăng nhập</td>
+                <td class="auto-style7">
+                    
+                    <asp:TextBox ID="txtTenDN" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvTenDN" runat="server"  ControlToValidate="txtTenDN" ErrorMessage="Tên đăng nhập không được bỏ trống" ForeColor="#FF3300">(*)</asp:RequiredFieldValidator>
+                </td>
+                <td style="vertical-align:top" rowspan="12">
+                    <asp:Label ID="lbThongTin" runat="server"></asp:Label>
+                    <br />
+                    <asp:ValidationSummary ID="vsLoi" runat="server" ForeColor="#FF3300"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Mật khẩu</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtMatKhau" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvMatKhau" runat="server" ErrorMessage="Mật khẩu không được bỏ trống" ControlToValidate="txtMatKhau" ForeColor="#FF3300">(*)</asp:RequiredFieldValidator>
 
-            <!-- Nút đăng ký -->
-            <div class="btn">
-                <asp:Button ID="btnDangKy" runat="server" Text="Đăng Ký" OnClick="btnDangKy_Click" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Nhập lại mật khẩu</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtMKNL" runat="server" CssClass="form-control" TextMode="Password"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvMKNL" runat="server" ErrorMessage="Chưa xác nhận mật khẩu" ControlToValidate="txtMKNL" ForeColor="#FF3300">(*)</asp:RequiredFieldValidator>
+                     <asp:CompareValidator ID="cvMKNL" runat="server" ErrorMessage="Mật khẩu xác nhận không trùng" ControlToCompare="txtMatKhau" ControlToValidate="txtMKNL" >(*)</asp:CompareValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-center" colspan="2" style="color: purple; background-color: pink;">Thông tin cá nhân</td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Họ tên khách hàng</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtHoTen" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvHoTen" runat="server" ControlToValidate="txtHoTen" ErrorMessage="Chưa nhập họ tên">(*)</asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Ngày sinh</td>
+                <td class="auto-style5">
+                  <div class="d-flex">
+                        <asp:DropDownList ID="ddlNgay" runat="server" CssClass="form-select">
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="ddlThang" runat="server" CssClass="form-select">
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="ddlNam" runat="server" CssClass="form-select">
+                    </asp:DropDownList>
+                  </div>
+                    </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Email</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Thu nhập</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtThuNhap" runat="server" CssClass="form-control"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Giới tính</td>
+                <td class="auto-style5">
+                    <asp:CheckBox ID="ckGioiTinh" runat="server" CssClass="form-check" Text="Nam" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Địa chỉ</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtDiaChi" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">Điện thoại</td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="txtDienThoai" runat="server" CssClass="form-control"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style5">
+                    <asp:Button ID="btDangKy" runat="server" Text="Đăng ký" CssClass="form-control" OnClick="btDangKy_Click"/>
+                </td>
+            </tr>
+        </table>
             </div>
-        </div>
     </form>
 </body>
 </html>

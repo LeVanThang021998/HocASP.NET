@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DangKyThongTin
+namespace Lab01
 {
 
 
@@ -24,40 +24,40 @@ namespace DangKyThongTin
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblTenDangNhap control.
+        /// txtTenDN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTenDangNhap;
+        protected global::System.Web.UI.WebControls.TextBox txtTenDN;
 
         /// <summary>
-        /// txtTenDangNhap control.
+        /// rfvTenDN control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTenDangNhap;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTenDN;
 
         /// <summary>
-        /// rfvTenDangNhap control.
+        /// lbThongTin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTenDangNhap;
+        protected global::System.Web.UI.WebControls.Label lbThongTin;
 
         /// <summary>
-        /// lblMatKhau control.
+        /// vsLoi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMatKhau;
+        protected global::System.Web.UI.WebControls.ValidationSummary vsLoi;
 
         /// <summary>
         /// txtMatKhau control.
@@ -78,112 +78,76 @@ namespace DangKyThongTin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvMatKhau;
 
         /// <summary>
-        /// lblNhapLaiMatKhau control.
+        /// txtMKNL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNhapLaiMatKhau;
+        protected global::System.Web.UI.WebControls.TextBox txtMKNL;
 
         /// <summary>
-        /// txtNhapLaiMatKhau control.
+        /// rfvMKNL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNhapLaiMatKhau;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvMKNL;
 
         /// <summary>
-        /// rfvNhapLaiMatKhau control.
+        /// cvMKNL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvNhapLaiMatKhau;
+        protected global::System.Web.UI.WebControls.CompareValidator cvMKNL;
 
         /// <summary>
-        /// cvNhapLaiMatKhau control.
+        /// txtHoTen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator cvNhapLaiMatKhau;
+        protected global::System.Web.UI.WebControls.TextBox txtHoTen;
 
         /// <summary>
-        /// lblTenKhachHang control.
+        /// rfvHoTen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTenKhachHang;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHoTen;
 
         /// <summary>
-        /// txtTenKhachHang control.
+        /// ddlNgay control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTenKhachHang;
+        protected global::System.Web.UI.WebControls.DropDownList ddlNgay;
 
         /// <summary>
-        /// rfvTenKhachHang control.
+        /// ddlThang control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTenKhachHang;
+        protected global::System.Web.UI.WebControls.DropDownList ddlThang;
 
         /// <summary>
-        /// lblNgaySinh control.
+        /// ddlNam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNgaySinh;
-
-        /// <summary>
-        /// ddlNgaySinh control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlNgaySinh;
-
-        /// <summary>
-        /// ddlThangSinh control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlThangSinh;
-
-        /// <summary>
-        /// ddlNamSinh control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlNamSinh;
-
-        /// <summary>
-        /// lblEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmail;
+        protected global::System.Web.UI.WebControls.DropDownList ddlNam;
 
         /// <summary>
         /// txtEmail control.
@@ -195,15 +159,6 @@ namespace DangKyThongTin
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// lblThuNhap control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblThuNhap;
-
-        /// <summary>
         /// txtThuNhap control.
         /// </summary>
         /// <remarks>
@@ -213,31 +168,13 @@ namespace DangKyThongTin
         protected global::System.Web.UI.WebControls.TextBox txtThuNhap;
 
         /// <summary>
-        /// lblGioitinh control.
+        /// ckGioiTinh control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGioitinh;
-
-        /// <summary>
-        /// chkNam control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkNam;
-
-        /// <summary>
-        /// lblDiaChi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDiaChi;
+        protected global::System.Web.UI.WebControls.CheckBox ckGioiTinh;
 
         /// <summary>
         /// txtDiaChi control.
@@ -249,48 +186,21 @@ namespace DangKyThongTin
         protected global::System.Web.UI.WebControls.TextBox txtDiaChi;
 
         /// <summary>
-        /// lblPhone control.
+        /// txtDienThoai control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPhone;
+        protected global::System.Web.UI.WebControls.TextBox txtDienThoai;
 
         /// <summary>
-        /// txtPhone control.
+        /// btDangKy control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPhone;
-
-        /// <summary>
-        /// txtDangKy control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button txtDangKy;
-
-        /// <summary>
-        /// vsError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary vsError;
-
-        /// <summary>
-        /// lblKetQua control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblKetQua;
+        protected global::System.Web.UI.WebControls.Button btDangKy;
     }
 }
